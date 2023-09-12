@@ -3,10 +3,10 @@ from ultralytics import YOLO
 from deep_sort_realtime.deepsort_tracker import DeepSort
 
 MAX_AGE = 60
-MIN_CONF = 0.4
+MIN_CONF = 0.3
 N_INITS = 5
 WEIGHTS = 'yolov8l.pt'
-VIDEO = r"C:\Users\aicpl\ShipsDatasets\VideoDataset\videos\video_24.mp4"
+VIDEO = 'test3.mp4'
 
 cap = cv.VideoCapture(video)
 model = YOLO(WEIGHTS)
